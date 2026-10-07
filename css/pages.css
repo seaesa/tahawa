@@ -9,6 +9,7 @@ body:not(.homepage) .hd-bar .navleft:hover .cat-menu { opacity: 1; visibility: v
 
 /* Nút sản phẩm: mặc định compact (73%, như trang chủ & danh mục); "Sản phẩm liên quan" dùng 100% */
 .related-grid .btn-item { font-size: 100%; padding: 6px 12px; line-height: 24px; }
+@media (max-width: 576px) { .related-grid .btn-item { line-height: 1.5; } }
 .related-grid .btn-item i { font-size: 100%; }
 @media (max-width: 991px) and (min-width: 768px) { .related-grid .btn-item, .related-grid .btn-item i { font-size: 80% !important; } }
 @media (max-width: 768px) and (min-width: 576px) { .related-grid .btn-item, .related-grid .btn-item i { font-size: 100% !important; } }
@@ -139,8 +140,9 @@ textarea.form-control { height: auto; min-height: 62px; resize: vertical; }
 .pd-thumbs-wrap { margin: 15px 0; position: relative; }
 .pd-thumb { width: 100%; border: 1px solid transparent; cursor: pointer; }
 .pd-thumb.is-current { border-color: #000; }
-.pd-thumb a { display: block; aspect-ratio: 1 / 1.025; background-size: cover; background-position: center; }
-.pd-thumb img { width: 100%; aspect-ratio: 1 / 1; opacity: 0; }
+.pd-thumb { height: 82px; }
+.pd-thumb a { display: block; height: 80px; background-size: cover; background-position: center; }
+.pd-thumb img { width: 100%; height: 100%; opacity: 0; }
 .product-detail-title { margin: 0 0 10px; font-size: 135%; font-weight: 700; line-height: 1.6; }
 .product-price { display: flex; flex-wrap: wrap; align-items: center; margin-top: 10px; }
 .product-price ins { margin-right: 5px; color: var(--primary-color); font-size: 120%; font-weight: 700; line-height: 1.6; text-decoration: none; }
@@ -246,7 +248,6 @@ textarea.form-control { height: auto; min-height: 62px; resize: vertical; }
 .related-col { flex: 0 0 100%; max-width: 100%; padding: 0 10px; margin-bottom: 20px; }
 @media (min-width: 576px) { .related-col { flex: 0 0 50%; max-width: 50%; } }
 @media (min-width: 992px) { .related-col { flex: 0 0 33.3333%; max-width: 33.3333%; } }
-.related-col .product-item .photoframe { padding-bottom: 64px; }
 
 /* Lightbox */
 html.lightbox-open { overflow: hidden; }
@@ -284,11 +285,16 @@ html.lightbox-open { overflow: hidden; }
 .post-col { flex: 0 0 100%; max-width: 100%; padding: 0 10px; margin-bottom: 20px; }
 @media (min-width: 576px) { .post-col { flex: 0 0 50%; max-width: 50%; } }
 .post-col .post-item { height: 100%; }
-.post-col .img-post img { float: left; width: 30%; max-width: 30%; margin-right: 10px; aspect-ratio: 346 / 259; }
+/* Ảnh nhỏ bên trái chỉ từ 992px; dưới 992px ảnh full-width phía trên (giống web gốc) */
+.post-col .img-post img { width: 100%; aspect-ratio: 346 / 259; }
 .post-col .info-post { margin-top: 0; }
-.post-col .post-title .two-lines { margin: 0 0 5px; }
-.post-col .post-title { display: flow-root; }
-.post-col .post-view-date { display: flow-root; }
+.post-col .post-title .two-lines { margin: 7px 0 5px; }
+@media (min-width: 992px) {
+  .post-col .img-post img { float: left; width: 30%; max-width: 30%; margin-right: 10px; }
+  .post-col .post-title { display: flow-root; }
+  .post-col .post-title .two-lines { margin: 0 0 5px; }
+  .post-col .post-view-date { display: flow-root; }
+}
 .pagging { min-height: 47px; text-align: center; }
 .lds-ellipsis { display: inline-block; position: relative; width: 64px; height: 47px; }
 .lds-ellipsis div { position: absolute; top: 18px; width: 11px; height: 11px; border-radius: 50%; background: var(--primary-color); animation-timing-function: cubic-bezier(0, 1, 1, 0); }

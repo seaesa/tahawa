@@ -38,7 +38,7 @@
     }
     return '<div class="product-item" data-name="' + esc(p.name) + '" data-price="' + esc(p.price) + '" data-old="' + esc(p.old || '') + '" data-disc="' + esc(p.disc || '') + '" data-img="' + esc(p.img) + '" data-href="' + esc(p.href) + '">' +
       '<figure class="photoframe">' +
-        '<div class="img-product"><a href="' + link(p.href) + '"><img src="' + esc(p.img) + '" alt="' + esc(p.name) + '" loading="lazy" draggable="false"></a></div>' +
+        '<div class="img-product"><a href="' + link(p.href) + '"><img src="' + esc(p.img) + '" alt="' + esc(p.name) + '" loading="lazy" draggable="false"></a><div class="img-btns"></div></div>' +
         '<figcaption class="infor-product">' +
           '<h3 class="product-title"><a href="' + link(p.href) + '" class="two-lines">' + esc(p.name) + '</a></h3>' +
           '<div class="review">' + stars + '</div>' +

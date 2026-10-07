@@ -1,4 +1,6 @@
 // Template HTML (tự viết) cho toàn bộ các loại trang của bản clone.
+// Phiên bản tài nguyên: đổi mỗi lần sinh trang để trình duyệt không dùng CSS/JS cũ trong cache
+const V = Date.now().toString(36);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const href = (h) => esc(h || '#');
 const SITE_NAME = 'Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng';
@@ -58,8 +60,8 @@ ${m.keywords ? `  <meta name="keywords" content="${esc(m.keywords)}">\n` : ''}  
 ${m.ogImage ? `  <meta property="og:image" content="${esc(m.ogImage)}">\n` : ''}  <link rel="canonical" href="${esc(o.path)}">
   <link rel="icon" href="/assets/img/media/logo-tahawa-den.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/style.css?v=${V}">
+  <link rel="stylesheet" href="/css/pages.css?v=${V}">
 </head>
 <body class="${esc(o.bodyClass || '')}">
 <div class="wrapper">
@@ -72,7 +74,7 @@ ${P.footer}
 </div>
 
 ${P.floats}
-${scripts.map((s) => `<script src="${s}"></script>`).join('\n')}
+${scripts.map((s) => `<script src="${s}?v=${V}"></script>`).join('\n')}
 </body>
 </html>
 `;
@@ -103,7 +105,7 @@ export function productCard(p) {
     : '';
   return `<div class="product-item" data-id="${esc(p.id || '')}" data-name="${esc(p.name)}" data-price="${esc(p.price || '')}" data-old="${esc(p.old || '')}" data-disc="${esc(p.disc || '')}" data-img="${esc(p.img || '')}" data-href="${esc(p.href)}">` +
     '<figure class="photoframe">' +
-      `<div class="img-product"><a href="${href(p.href)}"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" draggable="false"></a></div>` +
+      `<div class="img-product"><a href="${href(p.href)}"><img src="${esc(p.img)}" alt="${esc(p.name)}" loading="lazy" draggable="false"></a><div class="img-btns"></div></div>` +
       '<figcaption class="infor-product">' +
         `<h3 class="product-title"><a href="${href(p.href)}" class="two-lines">${esc(p.name)}</a></h3>` +
         (p.price ? `<div class="review">${stars(p.rating || 5)}</div>` : '') +
@@ -380,8 +382,8 @@ export function checkoutPage() {
   <meta name="robots" content="noindex">
   <link rel="icon" href="/assets/img/media/logo-tahawa-den.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/pages.css">
+  <link rel="stylesheet" href="/css/style.css?v=${V}">
+  <link rel="stylesheet" href="/css/pages.css?v=${V}">
 </head>
 <body class="checkout-page">
 <div class="checkout-wrap">
@@ -433,8 +435,8 @@ export function checkoutPage() {
     </div>
   </form>
 </div>
-<script src="/js/main.js"></script>
-<script src="/js/pages.js"></script>
+<script src="/js/main.js?v=${V}"></script>
+<script src="/js/pages.js?v=${V}"></script>
 </body>
 </html>
 `;

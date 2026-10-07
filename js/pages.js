@@ -357,7 +357,7 @@
         ? '<a href="/lien-he/" class="btn-item btn-contact"><i class="fa fa-phone-alt"></i> <span>Liên hệ</span></a>'
         : '<div class="product-buttons-group"><button type="button" class="btn-item buy_now"><i class="fa fa-shopping-basket"></i> <span>Mua ngay</span></button><button type="button" class="btn-item add_to_cart"><i class="fa fa-shopping-cart"></i> <span>Thêm vào giỏ hàng</span></button></div>';
       return '<div class="cat-col" data-order="' + i + '"><div class="product-item" data-name="' + esc(p.name) + '" data-price="' + esc(p.price || '') + '" data-old="' + esc(p.old || '') + '" data-disc="' + esc(p.disc || '') + '" data-img="' + esc(p.img || '') + '" data-href="' + esc(p.href) + '"><figure class="photoframe">' +
-        '<div class="img-product"><a href="' + esc(p.href) + '"><img src="' + esc(p.img) + '" alt="' + esc(p.name) + '" loading="lazy"></a></div>' +
+        '<div class="img-product"><a href="' + esc(p.href) + '"><img src="' + esc(p.img) + '" alt="' + esc(p.name) + '" loading="lazy"></a><div class="img-btns"></div></div>' +
         '<figcaption class="infor-product"><h3 class="product-title"><a href="' + esc(p.href) + '" class="two-lines">' + esc(p.name) + '</a></h3>' +
         (p.price ? '<div class="review"><i class="fa fa-star is-on"></i><i class="fa fa-star is-on"></i><i class="fa fa-star is-on"></i><i class="fa fa-star is-on"></i><i class="fa fa-star is-on"></i></div>' : '') +
         price + '<div class="btn-purchased">' + btns + '</div></figcaption></figure></div></div>';
