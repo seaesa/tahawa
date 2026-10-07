@@ -180,21 +180,20 @@ strong, b { font-weight: 700; }
 .menu-nav > li > a .fa-angle-down { font-size: 16px; }
 .menu-nav .sub-menu {
   position: absolute; top: 50px; left: 0; min-width: 200px; width: 100%;
-  padding: 0; background: #fff; color: #fff; border-radius: 4px;
+  padding: 0; background: #fff; color: #000; border-radius: 4px; min-width: 300px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .1);
   opacity: 0; visibility: hidden; transition: all .5s ease-out; z-index: 1000;
 }
 .menu-nav > li:hover > .sub-menu { opacity: 1; visibility: visible; border-radius: unset; border: none; }
 .menu-nav .sub-menu li { display: inline-block; width: 100%; }
+/* Fix lỗi web gốc: chữ submenu trắng trên nền trắng -> chữ tối, hover nền xanh chủ đạo */
 .menu-nav .sub-menu a {
-  display: inline-block; position: relative; width: 100%; margin: 5px 0; padding: 0 5px;
-  color: #fff; line-height: normal; text-transform: capitalize;
-  border-bottom: .5px solid var(--line-bottom-menu-color);
+  display: block; position: relative; width: 100%; padding: 10px 15px;
+  color: #000; line-height: 1.4; text-transform: capitalize;
+  border-bottom: 1px solid #eee; transition: background-color .2s, color .2s;
 }
-.menu-nav .sub-menu a::after {
-  content: ""; position: absolute; top: 3px; left: -3px; width: 1px; height: 12px; background-color: #828686;
-}
-.menu-nav .sub-menu li:hover > a { opacity: .8; }
+.menu-nav .sub-menu li:last-child > a { border-bottom: 0; }
+.menu-nav .sub-menu li:hover > a { background-color: var(--primary-color); color: #fff; }
 .hd-nav__tools { display: none; }
 
 /* ---------- Header desktop: sticky (fixed-ontop) ---------- */
@@ -205,8 +204,9 @@ strong, b { font-weight: 700; }
 .hd-bar.is-fixed .hd-main { display: none; }
 .hd-bar.is-fixed .hd-nav { background: transparent; }
 .hd-bar.is-fixed .menu-nav > li > a { color: #000; }
+/* Fix lỗi web gốc: mục đang chọn/hover chữ trắng trên nền trắng -> màu xanh chủ đạo */
 .hd-bar.is-fixed .menu-nav > li.active > a,
-.hd-bar.is-fixed .menu-nav > li:hover > a { color: #fff !important; }
+.hd-bar.is-fixed .menu-nav > li:hover > a { color: var(--primary-color) !important; }
 .hd-bar.is-fixed .cat-menu { opacity: 0; visibility: hidden; transform: translateY(20px); }
 .hd-bar.is-fixed .navleft:hover .cat-menu { opacity: 1; visibility: visible; transition: .3s ease-in; transform: translateY(0); }
 .hd-bar.is-fixed .cat-menu li.is-hidden { display: block !important; }
@@ -480,6 +480,8 @@ strong, b { font-weight: 700; }
    ========================================================= */
 .footer { color: #fff; }
 .footer-heading { display: inline-block; margin: 0 0 10px; font-size: 135%; line-height: 1.25; color: #fff; }
+/* Fix lỗi web gốc: tiêu đề form đăng ký chữ trắng trên nền xám nhạt */
+.newsletter .footer-heading { color: #000; }
 .footer-top .newsletter { padding: var(--space-between-widget) 0; }
 .newsletter__form { display: flex; flex-wrap: wrap; margin: 0 -10px; }
 .newsletter__fields { flex: 0 0 83.3333%; max-width: 83.3333%; display: flex; flex-wrap: wrap; }

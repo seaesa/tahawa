@@ -1,0 +1,146 @@
+<header id="header">
+    <!-- ===== TOPBAR ===== -->
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__left">
+          <ul class="topbar__phones">
+            <li>
+              <span class="phone-label">Gọi ngay</span>
+              <a href="tel:0564778867"><i class="fas fa-phone-alt"></i> 0564 77 88 67 </a>
+              <a href="tel:0355105838"><i class="fas fa-phone-alt"></i> 035 510 58 38 </a>
+            </li>
+          </ul>
+        </div>
+        <div class="topbar__right">
+          <div class="social-header">
+            <a href="https://www.facebook.com/Robotnhatban.tahawa" rel="nofollow" target="_blank" aria-label="facebook"><img src="/assets/img/static/themes/base/images/icons-link/icon-facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/TahawaVN" rel="nofollow" target="_blank" aria-label="twitter"><img src="/assets/img/static/themes/base/images/icons-link/icon-twitter.png" alt="twitter"></a>
+            <a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" rel="nofollow" target="_blank" aria-label="youtube"><img src="/assets/img/static/themes/base/images/icons-link/icon-youtube.png" alt="youtube"></a>
+            <a href="https://www.instagram.com/tahawavn/" rel="nofollow" target="_blank" aria-label="instagram"><img src="/assets/img/static/themes/base/images/icons-link/icon-instagram.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/tahawa-vn-972668227/" rel="nofollow" target="_blank" aria-label="linkedin"><img src="/assets/img/static/themes/base/images/icons-link/icon-linkedin.png" alt="linkedin"></a>
+          </div>
+          <ul class="user-header">
+            <li><a href="/login/"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+            <li><a href="/register/"><i class="fas fa-key"></i> Đăng ký</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HEADER DESKTOP (>=992px) ===== -->
+    <div class="header-desktop">
+      <div class="hd-sticky-spacer"></div>
+      <div class="hd-bar" data-sticky>
+        <div class="hd-main">
+          <div class="container">
+            <div class="hd-main__row">
+              <div class="hd-main__logo">
+                <a href="/" class="logo"><img src="/assets/img/media/logo-tahawa-den.png" alt="Tahawa" width="226" height="100"></a>
+              </div>
+              <div class="hd-main__search">
+                <form class="search-form search-form--wide" action="/tim-kiem/">
+                  <input type="text" name="keyword" placeholder="Nhập từ khóa" data-placeholder="Nhập từ khóa" autocomplete="off">
+                  <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+                </form>
+              </div>
+              <div class="hd-main__right">
+                <div class="hotline-header">
+                  <span class="phone-label">Gọi ngay</span><br>
+                  <a href="tel:0564778867"> 0564 77 88 67 </a>
+                </div>
+                <div class="mini-cart">
+                  <a href="/cart/" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hd-nav">
+          <div class="container">
+            <div class="hd-nav__row">
+              <div class="hd-nav__cat">
+                <div class="navleft">
+                  <div class="navleft__title"><div class="h3"><i class="fas fa-bars"></i>Danh mục</div></div>
+                  <div class="cat-menu">{{CAT_MENU}}</div>
+                </div>
+              </div>
+              <div class="hd-nav__menu">
+                <nav class="main-nav">
+                  <ul class="menu-nav">{{MAIN_MENU}}</ul>
+                </nav>
+                <ul class="hd-nav__tools">
+                  <li>
+                    <form class="search-form search-form--mini" action="/tim-kiem/">
+                      <input type="text" name="keyword" placeholder="Nhập từ khóa" autocomplete="off">
+                      <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+                    </form>
+                  </li>
+                  <li>
+                    <div class="mini-cart">
+                      <a href="/cart/" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== HEADER MOBILE (<992px) ===== -->
+    <div class="header-mobile">
+      <div class="hd-sticky-spacer"></div>
+      <div class="hm-bar" data-sticky>
+        <div class="container">
+          <div class="hm-row">
+            <div class="hm-logo">
+              <a href="/" class="logo"><img src="/assets/img/media/logo-tahawa-den.png" alt="Tahawa" width="113" height="50"></a>
+            </div>
+            <ul class="hm-tools">
+              <li>
+                <form class="search-form search-form--mini" action="/tim-kiem/">
+                  <input type="text" name="keyword" placeholder="Nhập từ khóa" autocomplete="off">
+                  <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
+                </form>
+              </li>
+              <li>
+                <div class="mini-cart">
+                  <a href="/cart/" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
+                </div>
+              </li>
+            </ul>
+            <nav class="m-nav">
+              <button type="button" class="m-nav__toggle" aria-label="Menu">
+                <span class="hamburger"><span></span></span>
+                <span class="m-nav__title">MENU</span>
+              </button>
+              <div class="m-nav__panel">
+                <ul class="m-menu">{{MOBILE_MENU}}</ul>
+                <div class="m-cat">
+                  <div class="m-cat__title">Danh mục</div>
+                  <ul class="m-menu m-menu--cat">{{MOBILE_CAT}}</ul>
+                </div>
+                <div class="m-nav__extra">
+                  <div class="social-header">
+                    <a href="https://www.facebook.com/Robotnhatban.tahawa" rel="nofollow" target="_blank" aria-label="facebook"><img src="/assets/img/static/themes/base/images/icons-link/icon-facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/TahawaVN" rel="nofollow" target="_blank" aria-label="twitter"><img src="/assets/img/static/themes/base/images/icons-link/icon-twitter.png" alt="twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" rel="nofollow" target="_blank" aria-label="youtube"><img src="/assets/img/static/themes/base/images/icons-link/icon-youtube.png" alt="youtube"></a>
+                    <a href="https://www.instagram.com/tahawavn/" rel="nofollow" target="_blank" aria-label="instagram"><img src="/assets/img/static/themes/base/images/icons-link/icon-instagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/tahawa-vn-972668227/" rel="nofollow" target="_blank" aria-label="linkedin"><img src="/assets/img/static/themes/base/images/icons-link/icon-linkedin.png" alt="linkedin"></a>
+                  </div>
+                  <ul class="user-header">
+                    <li><a href="/login/"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                    <li><a href="/register/"><i class="fas fa-key"></i> Đăng ký</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+{{HERO}}
+  </header>

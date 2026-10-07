@@ -3,13 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>/* /slug/index.html -> /slug/ */(function(l){var p=l.pathname;if(/\/index\.html?$/i.test(p)){l.replace(p.replace(/index\.html?$/i,'')+l.search+l.hash);}})(location);</script>
   <title>Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng</title>
   <meta name="description" content="Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng">
-  <link rel="icon" href="assets/img/media/logo-tahawa-den.png">
+  <meta property="og:title" content="Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng">
+  <meta property="og:description" content="Tahawa - Thiết Bị Công Nghiệp Nhật Bản Chính Hãng">
+  <link rel="canonical" href="/">
+  <link rel="icon" href="/assets/img/media/logo-tahawa-den.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/pages.css">
 </head>
-<body>
+<body class="homepage">
 <div class="wrapper">
 
   <header id="header">
@@ -27,15 +32,15 @@
         </div>
         <div class="topbar__right">
           <div class="social-header">
-            <a href="https://www.facebook.com/Robotnhatban.tahawa" rel="nofollow" target="_blank" aria-label="facebook"><img src="assets/img/static/themes/base/images/icons-link/icon-facebook.png" alt="facebook"></a>
-            <a href="https://twitter.com/TahawaVN" rel="nofollow" target="_blank" aria-label="twitter"><img src="assets/img/static/themes/base/images/icons-link/icon-twitter.png" alt="twitter"></a>
-            <a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" rel="nofollow" target="_blank" aria-label="youtube"><img src="assets/img/static/themes/base/images/icons-link/icon-youtube.png" alt="youtube"></a>
-            <a href="https://www.instagram.com/tahawavn/" rel="nofollow" target="_blank" aria-label="instagram"><img src="assets/img/static/themes/base/images/icons-link/icon-instagram.png" alt="instagram"></a>
-            <a href="https://www.linkedin.com/in/tahawa-vn-972668227/" rel="nofollow" target="_blank" aria-label="linkedin"><img src="assets/img/static/themes/base/images/icons-link/icon-linkedin.png" alt="linkedin"></a>
+            <a href="https://www.facebook.com/Robotnhatban.tahawa" rel="nofollow" target="_blank" aria-label="facebook"><img src="/assets/img/static/themes/base/images/icons-link/icon-facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/TahawaVN" rel="nofollow" target="_blank" aria-label="twitter"><img src="/assets/img/static/themes/base/images/icons-link/icon-twitter.png" alt="twitter"></a>
+            <a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" rel="nofollow" target="_blank" aria-label="youtube"><img src="/assets/img/static/themes/base/images/icons-link/icon-youtube.png" alt="youtube"></a>
+            <a href="https://www.instagram.com/tahawavn/" rel="nofollow" target="_blank" aria-label="instagram"><img src="/assets/img/static/themes/base/images/icons-link/icon-instagram.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/tahawa-vn-972668227/" rel="nofollow" target="_blank" aria-label="linkedin"><img src="/assets/img/static/themes/base/images/icons-link/icon-linkedin.png" alt="linkedin"></a>
           </div>
           <ul class="user-header">
-            <li><a href="https://tahawa.com.vn/login"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
-            <li><a href="https://tahawa.com.vn/register"><i class="fas fa-key"></i> Đăng ký</a></li>
+            <li><a href="/login/"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+            <li><a href="/register/"><i class="fas fa-key"></i> Đăng ký</a></li>
           </ul>
         </div>
       </div>
@@ -49,10 +54,10 @@
           <div class="container">
             <div class="hd-main__row">
               <div class="hd-main__logo">
-                <a href="#" class="logo"><img src="assets/img/media/logo-tahawa-den.png" alt="Tahawa" width="226" height="100"></a>
+                <a href="/" class="logo"><img src="/assets/img/media/logo-tahawa-den.png" alt="Tahawa" width="226" height="100"></a>
               </div>
               <div class="hd-main__search">
-                <form class="search-form search-form--wide" action="#" onsubmit="return false">
+                <form class="search-form search-form--wide" action="/tim-kiem/">
                   <input type="text" name="keyword" placeholder="Nhập từ khóa" data-placeholder="Nhập từ khóa" autocomplete="off">
                   <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
                 </form>
@@ -63,7 +68,7 @@
                   <a href="tel:0564778867"> 0564 77 88 67 </a>
                 </div>
                 <div class="mini-cart">
-                  <a href="#" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
+                  <a href="/cart/" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
                 </div>
               </div>
             </div>
@@ -76,23 +81,23 @@
               <div class="hd-nav__cat">
                 <div class="navleft">
                   <div class="navleft__title"><div class="h3"><i class="fas fa-bars"></i>Danh mục</div></div>
-                  <div class="cat-menu" data-cat-menu></div>
+                  <div class="cat-menu"><ul><li><a href="/may-hut-bui-cong-nghiep/"> MÁY HÚT BỤI CÔNG NGHIỆP </a></li><li><a href="/may-cha-san/"> MÁY CHÀ SÀN </a></li><li><a href="/may-say-tham/"> MÁY GIẶT THẢM, SẤY THẢM </a></li><li><a href="/may-rua-xe-phun-ap-luc-cao/"> MÁY RỬA XE ÁP LỰC CAO </a></li><li><a href="/san-pham-cong-nghiep/may-han-tahawa/"> MÁY HÀN </a></li><li><a href="/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/"> THIẾT BỊ BẾP CÔNG NGHIỆP </a></li><li class="is-hidden"><a href="/san-pham-cong-nghiep/thiet-bi-nang-ha/"> THIẾT BỊ NÂNG HẠ </a></li><li class="is-hidden"><a href="/xe-day-hang/"> XE ĐẨY HÀNG </a></li><li class="is-hidden"><a href="/may-xoa-tuong/"> MÁY XOA TƯỜNG, XOA NỀN </a></li><li class="is-hidden"><a href="/may-phat-dien-tahawa/"> MÁY PHÁT ĐIỆN </a></li><li class="is-hidden"><a href="/do-gia-dung/may-bom/"> MÁY BƠM NƯỚC </a></li><li class="is-hidden"><a href="/do-gia-dung/may-cat-co-tahawa-nhat-ban-bao-hanh-2-nam/"> MÁY CẮT CỎ </a></li><li class="has-sub is-hidden"><a href="/may-gia-dung/"> MÁY GIA DỤNG </a><div class="wrap-popup"><div class="popup"><ul><li><a href="/robot-hut-bui-tahawa/"> ROBOT HÚT BỤI </a></li><li><a href="/robot-lau-kinh-nhat-ban/"> ROBOT LAU KÍNH </a></li><li><a href="/may-rua-rau-cu-qua-tahawa/"> MÁY RỬA THỰC PHẨM </a></li><li><a href="/may-ep-dau/"> MÁY ÉP DẦU </a></li></ul></div></div></li><li class="has-sub is-hidden"><a href="/phu-kien-thay-the/"> PHỤ KIỆN THAY THẾ </a><div class="wrap-popup"><div class="popup"><ul><li><a href="/phu-kien-thay-the/phu-kien-may-hut-bui-cong-nghiep/"> PHỤ KIỆN MÁY HÚT BỤI CÔNG NGHIỆP </a></li><li><a href="/phu-kien-thay-the/phu-kien-may-cha-san/"> PHỤ KIỆN MÁY CHÀ SÀN </a></li><li><a href="/phu-kien-thay-the/phu-kien-robot-hut-bui/"> PHỤ KIỆN ROBOT HÚT BỤI </a></li><li><a href="/phu-kien-thay-the/phu-kien-robot-lau-kinh/"> PHỤ KIỆN ROBOT LAU KÍNH </a></li></ul></div></div></li><li class="more"><a class="more-toggle"> Xem thêm ...</a></li></ul></div>
                 </div>
               </div>
               <div class="hd-nav__menu">
                 <nav class="main-nav">
-                  <ul class="menu-nav" data-main-menu></ul>
+                  <ul class="menu-nav"><li class="active"><a href="/"> TRANG CHỦ </a></li><li class=""><a href="/gioi-thieu/"> GIỚI THIỆU </a></li><li class=""><a href="/tin-tuc-tahawa/"> TIN TỨC </a></li><li class=" dropdown"><a href="/chinh-sach-cua-tahawa/"> CHÍNH SÁCH <i class="fas fa-angle-down"></i></a><ul class="sub-menu"><li><a href="/chinh-sach-tra-gop-tahawa/">CHÍNH SÁCH TRẢ GÓP TAHAWA</a></li><li><a href="/chinh-sach-ban-hang-cua-tahawa/">CHÍNH SÁCH BÁN HÀNG CỦA TAHAWA</a></li><li><a href="/chinh-sach-bao-hanh-cua-tahawa/">CHÍNH SÁCH BẢO HÀNH CỦA TAHAWA</a></li><li><a href="/chinh-sach-van-chuyen-giao-nhan-cua-tahawa/">CHÍNH SÁCH VẬN CHUYỂN - GIAO NHẬN CỦA TAHAWA</a></li><li><a href="/chinh-sach-doi-tra-cua-tahawa/">CHÍNH SÁCH ĐỔI TRẢ CỦA TAHAWA</a></li><li><a href="/chinh-sach-thanh-toan-cua-tahawa/">CHÍNH SÁCH THANH TOÁN CỦA TAHAWA</a></li><li><a href="/chinh-sach-bao-mat-thong-tin-khach-hang-cua-tahawa/">BẢO MẬT THÔNG TIN KHÁCH HÀNG CỦA TAHAWA</a></li></ul></li><li class=""><a href="/chinh-sach-dai-ly-tahawa/"> HỢP TÁC ĐẠI LÝ </a></li></ul>
                 </nav>
                 <ul class="hd-nav__tools">
                   <li>
-                    <form class="search-form search-form--mini" action="#" onsubmit="return false">
+                    <form class="search-form search-form--mini" action="/tim-kiem/">
                       <input type="text" name="keyword" placeholder="Nhập từ khóa" autocomplete="off">
                       <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
                     </form>
                   </li>
                   <li>
                     <div class="mini-cart">
-                      <a href="#" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
+                      <a href="/cart/" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
                     </div>
                   </li>
                 </ul>
@@ -110,18 +115,18 @@
         <div class="container">
           <div class="hm-row">
             <div class="hm-logo">
-              <a href="#" class="logo"><img src="assets/img/media/logo-tahawa-den.png" alt="Tahawa" width="113" height="50"></a>
+              <a href="/" class="logo"><img src="/assets/img/media/logo-tahawa-den.png" alt="Tahawa" width="113" height="50"></a>
             </div>
             <ul class="hm-tools">
               <li>
-                <form class="search-form search-form--mini" action="#" onsubmit="return false">
+                <form class="search-form search-form--mini" action="/tim-kiem/">
                   <input type="text" name="keyword" placeholder="Nhập từ khóa" autocomplete="off">
                   <button type="submit" aria-label="Tìm kiếm"><i class="fas fa-search"></i></button>
                 </form>
               </li>
               <li>
                 <div class="mini-cart">
-                  <a href="#" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
+                  <a href="/cart/" class="mini-cart__link"><i class="fa fa-shopping-basket"></i><span class="mini-cart__num">0</span></a>
                 </div>
               </li>
             </ul>
@@ -131,22 +136,22 @@
                 <span class="m-nav__title">MENU</span>
               </button>
               <div class="m-nav__panel">
-                <ul class="m-menu" data-mobile-menu></ul>
+                <ul class="m-menu"><li><a href="/"> TRANG CHỦ </a></li><li><a href="/gioi-thieu/"> GIỚI THIỆU </a></li><li><a href="/tin-tuc-tahawa/"> TIN TỨC </a></li><li><a href="/chinh-sach-cua-tahawa/"> CHÍNH SÁCH </a><span class="m-toggle"><i class="fa fa-plus"></i></span><ul class="m-sub"><li><a href="/chinh-sach-tra-gop-tahawa/">CHÍNH SÁCH TRẢ GÓP TAHAWA</a></li><li><a href="/chinh-sach-ban-hang-cua-tahawa/">CHÍNH SÁCH BÁN HÀNG CỦA TAHAWA</a></li><li><a href="/chinh-sach-bao-hanh-cua-tahawa/">CHÍNH SÁCH BẢO HÀNH CỦA TAHAWA</a></li><li><a href="/chinh-sach-van-chuyen-giao-nhan-cua-tahawa/">CHÍNH SÁCH VẬN CHUYỂN - GIAO NHẬN CỦA TAHAWA</a></li><li><a href="/chinh-sach-doi-tra-cua-tahawa/">CHÍNH SÁCH ĐỔI TRẢ CỦA TAHAWA</a></li><li><a href="/chinh-sach-thanh-toan-cua-tahawa/">CHÍNH SÁCH THANH TOÁN CỦA TAHAWA</a></li><li><a href="/chinh-sach-bao-mat-thong-tin-khach-hang-cua-tahawa/">BẢO MẬT THÔNG TIN KHÁCH HÀNG CỦA TAHAWA</a></li></ul></li><li><a href="/chinh-sach-dai-ly-tahawa/"> HỢP TÁC ĐẠI LÝ </a></li></ul>
                 <div class="m-cat">
                   <div class="m-cat__title">Danh mục</div>
-                  <ul class="m-menu m-menu--cat" data-mobile-cat></ul>
+                  <ul class="m-menu m-menu--cat"><li><a href="/may-hut-bui-cong-nghiep/"> MÁY HÚT BỤI CÔNG NGHIỆP </a></li><li><a href="/may-cha-san/"> MÁY CHÀ SÀN </a></li><li><a href="/may-say-tham/"> MÁY GIẶT THẢM, SẤY THẢM </a></li><li><a href="/may-rua-xe-phun-ap-luc-cao/"> MÁY RỬA XE ÁP LỰC CAO </a></li><li><a href="/san-pham-cong-nghiep/may-han-tahawa/"> MÁY HÀN </a></li><li><a href="/san-pham-cong-nghiep/thiet-bi-bep-cong-nghiep/"> THIẾT BỊ BẾP CÔNG NGHIỆP </a></li><li><a href="/san-pham-cong-nghiep/thiet-bi-nang-ha/"> THIẾT BỊ NÂNG HẠ </a></li><li><a href="/xe-day-hang/"> XE ĐẨY HÀNG </a></li><li><a href="/may-xoa-tuong/"> MÁY XOA TƯỜNG, XOA NỀN </a></li><li><a href="/may-phat-dien-tahawa/"> MÁY PHÁT ĐIỆN </a></li><li><a href="/do-gia-dung/may-bom/"> MÁY BƠM NƯỚC </a></li><li><a href="/do-gia-dung/may-cat-co-tahawa-nhat-ban-bao-hanh-2-nam/"> MÁY CẮT CỎ </a></li><li><a href="/may-gia-dung/"> MÁY GIA DỤNG </a><span class="m-toggle"><i class="fa fa-plus"></i></span><ul class="m-sub"><li><a href="/robot-hut-bui-tahawa/">ROBOT HÚT BỤI</a></li><li><a href="/robot-lau-kinh-nhat-ban/">ROBOT LAU KÍNH</a></li><li><a href="/may-rua-rau-cu-qua-tahawa/">MÁY RỬA THỰC PHẨM</a></li><li><a href="/may-ep-dau/">MÁY ÉP DẦU</a></li></ul></li><li><a href="/phu-kien-thay-the/"> PHỤ KIỆN THAY THẾ </a><span class="m-toggle"><i class="fa fa-plus"></i></span><ul class="m-sub"><li><a href="/phu-kien-thay-the/phu-kien-may-hut-bui-cong-nghiep/">PHỤ KIỆN MÁY HÚT BỤI CÔNG NGHIỆP</a></li><li><a href="/phu-kien-thay-the/phu-kien-may-cha-san/">PHỤ KIỆN MÁY CHÀ SÀN</a></li><li><a href="/phu-kien-thay-the/phu-kien-robot-hut-bui/">PHỤ KIỆN ROBOT HÚT BỤI</a></li><li><a href="/phu-kien-thay-the/phu-kien-robot-lau-kinh/">PHỤ KIỆN ROBOT LAU KÍNH</a></li></ul></li></ul>
                 </div>
                 <div class="m-nav__extra">
                   <div class="social-header">
-                    <a href="https://www.facebook.com/Robotnhatban.tahawa" rel="nofollow" target="_blank" aria-label="facebook"><img src="assets/img/static/themes/base/images/icons-link/icon-facebook.png" alt="facebook"></a>
-                    <a href="https://twitter.com/TahawaVN" rel="nofollow" target="_blank" aria-label="twitter"><img src="assets/img/static/themes/base/images/icons-link/icon-twitter.png" alt="twitter"></a>
-                    <a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" rel="nofollow" target="_blank" aria-label="youtube"><img src="assets/img/static/themes/base/images/icons-link/icon-youtube.png" alt="youtube"></a>
-                    <a href="https://www.instagram.com/tahawavn/" rel="nofollow" target="_blank" aria-label="instagram"><img src="assets/img/static/themes/base/images/icons-link/icon-instagram.png" alt="instagram"></a>
-                    <a href="https://www.linkedin.com/in/tahawa-vn-972668227/" rel="nofollow" target="_blank" aria-label="linkedin"><img src="assets/img/static/themes/base/images/icons-link/icon-linkedin.png" alt="linkedin"></a>
+                    <a href="https://www.facebook.com/Robotnhatban.tahawa" rel="nofollow" target="_blank" aria-label="facebook"><img src="/assets/img/static/themes/base/images/icons-link/icon-facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/TahawaVN" rel="nofollow" target="_blank" aria-label="twitter"><img src="/assets/img/static/themes/base/images/icons-link/icon-twitter.png" alt="twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" rel="nofollow" target="_blank" aria-label="youtube"><img src="/assets/img/static/themes/base/images/icons-link/icon-youtube.png" alt="youtube"></a>
+                    <a href="https://www.instagram.com/tahawavn/" rel="nofollow" target="_blank" aria-label="instagram"><img src="/assets/img/static/themes/base/images/icons-link/icon-instagram.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/tahawa-vn-972668227/" rel="nofollow" target="_blank" aria-label="linkedin"><img src="/assets/img/static/themes/base/images/icons-link/icon-linkedin.png" alt="linkedin"></a>
                   </div>
                   <ul class="user-header">
-                    <li><a href="https://tahawa.com.vn/login"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
-                    <li><a href="https://tahawa.com.vn/register"><i class="fas fa-key"></i> Đăng ký</a></li>
+                    <li><a href="/login/"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                    <li><a href="/register/"><i class="fas fa-key"></i> Đăng ký</a></li>
                   </ul>
                 </div>
               </div>
@@ -166,7 +171,9 @@
         </div>
       </div>
     </div>
+
   </header>
+
 
   <main class="page-content" id="page-content">
     <!-- BẠN ĐANG TÌM GÌ -->
@@ -300,6 +307,7 @@
     </section>
   </main>
 
+
   <footer class="footer">
     <div class="footer-top">
       <div class="newsletter">
@@ -337,13 +345,13 @@
           <div class="footer-col">
             <div class="footer-heading">CÔNG TY TNHH TM PHẠM GIA CÁT</div>
             <div class="footer-content">
-              <p><img src="assets/img/media/dc.png" alt="" style="height:25px;width:25px">&nbsp;&nbsp;<strong>Địa Chỉ: </strong>Số 14 Đường 2A, Phường An Lạc, TP Hồ Chí Minh, Việt Nam</p>
-              <p><img src="assets/img/media/alarm-clock-icon.png" alt="" style="height:25px;width:25px">&nbsp;<strong>Thời Gian Làm Việc:&nbsp;</strong>08:00 – 17:30 Thứ 2-Thứ 7</p>
-              <p><img src="assets/img/media/icon-07-1-300x300.png" alt="" style="height:31px;width:31px"><strong>MST:&nbsp;0316208029</strong></p>
-              <p><img src="assets/img/media/phone-icon.png" alt="" style="width:26px;height:23px;float:left"><strong>Hotline </strong>:&nbsp;<strong><a href="tel:0564778867">0564 77 88 67</a>&nbsp;</strong></p>
-              <p><img src="assets/img/media/1200px-email-shiny-iconsvg.png" alt="" style="height:25px;width:25px">&nbsp;<strong>Email:</strong> <a href="mailto:tahawa.info@gmail.com">tahawa.info@gmail.com</a></p>
+              <p><img src="/assets/img/media/dc.png" alt="" style="height:25px;width:25px">&nbsp;&nbsp;<strong>Địa Chỉ: </strong>Số 14 Đường 2A, Phường An Lạc, TP Hồ Chí Minh, Việt Nam</p>
+              <p><img src="/assets/img/media/alarm-clock-icon.png" alt="" style="height:25px;width:25px">&nbsp;<strong>Thời Gian Làm Việc:&nbsp;</strong>08:00 – 17:30 Thứ 2-Thứ 7</p>
+              <p><img src="/assets/img/media/icon-07-1-300x300.png" alt="" style="height:31px;width:31px"><strong>MST:&nbsp;0316208029</strong></p>
+              <p><img src="/assets/img/media/phone-icon.png" alt="" style="width:26px;height:23px;float:left"><strong>Hotline </strong>:&nbsp;<strong><a href="tel:0564778867">0564 77 88 67</a>&nbsp;</strong></p>
+              <p><img src="/assets/img/media/1200px-email-shiny-iconsvg.png" alt="" style="height:25px;width:25px">&nbsp;<strong>Email:</strong> <a href="mailto:tahawa.info@gmail.com">tahawa.info@gmail.com</a></p>
               <p></p>
-              <p><a href="http://online.gov.vn/Home/WebDetails/70943" target="_blank" rel="nofollow"><img src="assets/img/media/20150827110756-dathongbao.png" alt="Đã thông báo Bộ Công Thương" style="width:100px;height:38px;float:left">&nbsp;</a>&nbsp;<a href="https://www.dmca.com/Protection/Status.aspx?ID=721503ef-578c-4395-a588-d73e30e1eded&amp;refurl=https://tahawa.vn/" rel="nofollow"><img src="assets/img/media/thiet-ke-chua-co-ten-36.png" alt="DMCA" style="width:95px;height:38px"></a></p>
+              <p><a href="http://online.gov.vn/Home/WebDetails/70943" target="_blank" rel="nofollow"><img src="/assets/img/media/20150827110756-dathongbao.png" alt="Đã thông báo Bộ Công Thương" style="width:100px;height:38px;float:left">&nbsp;</a>&nbsp;<a href="https://www.dmca.com/Protection/Status.aspx?ID=721503ef-578c-4395-a588-d73e30e1eded&amp;refurl=https://tahawa.vn/" rel="nofollow"><img src="/assets/img/media/thiet-ke-chua-co-ten-36.png" alt="DMCA" style="width:95px;height:38px"></a></p>
               <p>&nbsp;</p>
               <p>&nbsp;</p>
             </div>
@@ -351,14 +359,14 @@
           <div class="footer-col">
             <div class="footer-heading">CHÍNH SÁCH CỦA TAHAWA</div>
             <div class="footer-content footer-content--links">
-              <p><img src="assets/img/media/ezgifcom-gif-maker.png" alt="" style="height:26px;width:26px">&nbsp;<strong><a href="https://tahawa.vn/chinh-sach-tra-gop-tahawa.html">Chính Sách Trả Góp</a></strong></p>
-              <p><img src="assets/img/media/store.png" alt="" style="width:25px;height:25px">&nbsp;<strong><a href="https://tahawa.vn/chinh-sach-ban-hang-cua-tahawa.html">Chính&nbsp;Sách&nbsp;Bán Hàng</a></strong></p>
-              <p><img src="assets/img/media/pos-icon-02-removebg-preview.png" alt="" style="width:28px;height:25px"><strong><a href="https://tahawa.vn/chinh-sach-bao-hanh-cua-tahawa.html" target="_blank">Chính Sách Bảo Hành</a></strong></p>
-              <p><img src="assets/img/media/ezgifcom-gif-maker-5.png" alt="" style="height:23px;width:24px">&nbsp;<strong><a href="https://tahawa.vn/chinh-sach-van-chuyen-giao-nhan-cua-tahawa.html" target="_blank">Chính Sách Vận Chuyển - Giao Nhận</a></strong></p>
-              <p><img src="assets/img/media/ezgifcom-gif-maker-2.png" alt="" style="width:28px;height:26px"><strong><a href="https://tahawa.vn/chinh-sach-thanh-toan-cua-tahawa.html" target="_blank">Chính Sách Thanh Toán</a></strong></p>
-              <p><img src="assets/img/media/ezgifcom-gif-maker-1.png" alt="" style="width:28px;height:26px"><strong><a href="https://tahawa.vn/chinh-sach-doi-tra-cua-tahawa.html" target="_blank">Chính Sách Đổi Trả</a>&nbsp;</strong></p>
-              <p><img src="assets/img/media/ezgifcom-gif-maker-4.png" alt="" style="width:28px;height:27px"><strong><a href="https://tahawa.vn/chinh-sach-bao-mat-thong-tin-khach-hang-cua-tahawa.html" target="_blank">Bảo Mật Thông Tin Khách Hàng</a></strong></p>
-              <p><img src="assets/img/media/png-clipart-computer-icons-symbol-professional-business-folder-miscellaneous-service-thumbnail-removebg-preview.png" alt="" style="height:26px;width:26px">&nbsp;<strong><a href="https://tahawa.vn/dieu-khoan-dich-vu-tahawa.html">Điều Khoản Dịch Vụ</a></strong></p>
+              <p><img src="/assets/img/media/ezgifcom-gif-maker.png" alt="" style="height:26px;width:26px">&nbsp;<strong><a href="/chinh-sach-tra-gop-tahawa/">Chính Sách Trả Góp</a></strong></p>
+              <p><img src="/assets/img/media/store.png" alt="" style="width:25px;height:25px">&nbsp;<strong><a href="/chinh-sach-ban-hang-cua-tahawa/">Chính&nbsp;Sách&nbsp;Bán Hàng</a></strong></p>
+              <p><img src="/assets/img/media/pos-icon-02-removebg-preview.png" alt="" style="width:28px;height:25px"><strong><a href="/chinh-sach-bao-hanh-cua-tahawa/" target="_blank">Chính Sách Bảo Hành</a></strong></p>
+              <p><img src="/assets/img/media/ezgifcom-gif-maker-5.png" alt="" style="height:23px;width:24px">&nbsp;<strong><a href="/chinh-sach-van-chuyen-giao-nhan-cua-tahawa/" target="_blank">Chính Sách Vận Chuyển - Giao Nhận</a></strong></p>
+              <p><img src="/assets/img/media/ezgifcom-gif-maker-2.png" alt="" style="width:28px;height:26px"><strong><a href="/chinh-sach-thanh-toan-cua-tahawa/" target="_blank">Chính Sách Thanh Toán</a></strong></p>
+              <p><img src="/assets/img/media/ezgifcom-gif-maker-1.png" alt="" style="width:28px;height:26px"><strong><a href="/chinh-sach-doi-tra-cua-tahawa/" target="_blank">Chính Sách Đổi Trả</a>&nbsp;</strong></p>
+              <p><img src="/assets/img/media/ezgifcom-gif-maker-4.png" alt="" style="width:28px;height:27px"><strong><a href="/chinh-sach-bao-mat-thong-tin-khach-hang-cua-tahawa/" target="_blank">Bảo Mật Thông Tin Khách Hàng</a></strong></p>
+              <p><img src="/assets/img/media/png-clipart-computer-icons-symbol-professional-business-folder-miscellaneous-service-thumbnail-removebg-preview.png" alt="" style="height:26px;width:26px">&nbsp;<strong><a href="/dieu-khoan-dich-vu-tahawa/">Điều Khoản Dịch Vụ</a></strong></p>
               <p>&nbsp;</p>
             </div>
             <div class="footer-copyright"><p>© Bản quyền thuộc về công ty TNHH Thương Mại Phạm Gia Cát</p></div>
@@ -367,7 +375,7 @@
             <div class="footer-heading">LIÊN KẾT VỚI TAHAWA:</div>
             <div class="footer-content">
               <p class="footer-social">
-                <a href="https://www.facebook.com/robotlaukinhtahawa"><img src="assets/img/media/facebook1.png" alt="Facebook"></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" target="_blank"><img src="assets/img/media/142452-youtube.png" alt="YouTube"></a>&nbsp;&nbsp;<a href="https://www.instagram.com/tahawa_nhatban/" target="_blank"><img src="assets/img/media/instagram.png" alt="Instagram"></a>&nbsp;&nbsp;<a href="https://www.tiktok.com/@tahawanhatban" target="_blank"><img src="assets/img/media/tiktok-logo-1f4a5dcd45-seeklogocom.png" alt="TikTok"></a>&nbsp;&nbsp;<a href="https://zalo.me/0564778867"><img src="assets/img/media/zalo-icon.png" alt="Zalo"></a>&nbsp;&nbsp;<a href="https://www.lazada.vn/shop/shop-tahawa/"><img src="assets/img/media/logo-lazada-2.png" alt="Lazada"></a>&nbsp;&nbsp;<a href="https://shopee.vn/tahawa.vn#product_list"><img src="assets/img/media/iu.png" alt="Shopee"></a>
+                <a href="https://www.facebook.com/robotlaukinhtahawa"><img src="/assets/img/media/facebook1.png" alt="Facebook"></a>&nbsp;&nbsp;<a href="https://www.youtube.com/channel/UCwSCdTSZPaB9GgN85_9CHfw" target="_blank"><img src="/assets/img/media/142452-youtube.png" alt="YouTube"></a>&nbsp;&nbsp;<a href="https://www.instagram.com/tahawa_nhatban/" target="_blank"><img src="/assets/img/media/instagram.png" alt="Instagram"></a>&nbsp;&nbsp;<a href="https://www.tiktok.com/@tahawanhatban" target="_blank"><img src="/assets/img/media/tiktok-logo-1f4a5dcd45-seeklogocom.png" alt="TikTok"></a>&nbsp;&nbsp;<a href="https://zalo.me/0564778867"><img src="/assets/img/media/zalo-icon.png" alt="Zalo"></a>&nbsp;&nbsp;<a href="https://www.lazada.vn/shop/shop-tahawa/"><img src="/assets/img/media/logo-lazada-2.png" alt="Lazada"></a>&nbsp;&nbsp;<a href="https://shopee.vn/tahawa.vn#product_list"><img src="/assets/img/media/iu.png" alt="Shopee"></a>
               </p>
               <p><br></p>
               <p class="footer-map"><iframe title="Bản đồ Tahawa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
@@ -378,6 +386,7 @@
       </div>
     </div>
   </footer>
+
 </div>
 
 <!-- Nút liên hệ nổi -->
@@ -385,25 +394,25 @@
   <div class="fb-item fb-item--zalo">
     <a href="https://zalo.me/0564778867" rel="nofollow" target="_blank" aria-label="Zalo">
       <span class="fb-circle"></span><span class="fb-fill"></span>
-      <span class="fb-img" style="background-image:url(assets/img/static/themes/base/images/icons/icon-zalo.svg)"></span>
+      <span class="fb-img" style="background-image:url(/assets/img/static/themes/base/images/icons/icon-zalo.svg)"></span>
     </a>
   </div>
   <div class="fb-item fb-item--messenger">
     <a href="https://m.me/102662831772313" rel="nofollow" target="_blank" aria-label="Messenger">
       <span class="fb-circle"></span><span class="fb-fill"></span>
-      <span class="fb-img" style="background-image:url(assets/img/static/themes/base/images/icons/facebook-messenger.png)"></span>
+      <span class="fb-img" style="background-image:url(/assets/img/static/themes/base/images/icons/facebook-messenger.png)"></span>
     </a>
   </div>
   <div class="fb-item fb-item--mail">
     <a href="mailto:Tahawa.info@gmail.com" rel="nofollow" aria-label="Email">
       <span class="fb-circle"></span><span class="fb-fill"></span>
-      <span class="fb-img" style="background-image:url(assets/img/static/themes/base/images/icons/icon-mail.png)"></span>
+      <span class="fb-img" style="background-image:url(/assets/img/static/themes/base/images/icons/icon-mail.png)"></span>
     </a>
   </div>
   <div class="fb-item fb-item--phone">
     <a href="tel:0564778867" rel="nofollow" aria-label="Hotline">
       <span class="fb-circle"></span><span class="fb-fill"></span>
-      <span class="fb-img" style="background-image:url(assets/img/static/themes/base/images/icons/phone-ico.png)"></span>
+      <span class="fb-img" style="background-image:url(/assets/img/static/themes/base/images/icons/phone-ico.png)"></span>
     </a>
   </div>
 </div>
@@ -415,13 +424,14 @@
     <button type="button" class="notify-cart__close" aria-label="Đóng"><i class="fas fa-times"></i></button>
     <div class="notify-cart__icon"><i class="fas fa-check-circle"></i></div>
     <div class="notify-cart__text">Đã thêm vào giỏ hàng</div>
-    <a href="#" class="notify-cart__view">Xem giỏ hàng và thanh toán</a>
+    <a href="/cart/" class="notify-cart__view">Xem giỏ hàng và thanh toán</a>
   </div>
 </div>
 
-<script src="js/data.js"></script>
-<script src="js/menu-data.js"></script>
-<script src="js/carousel.js"></script>
-<script src="js/main.js"></script>
+
+<script src="/js/carousel.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/data.js"></script>
+<script src="/js/home.js"></script>
 </body>
 </html>
